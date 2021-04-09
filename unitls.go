@@ -3,7 +3,6 @@ package sego
 import (
 	"bytes"
 	"fmt"
-	"log"
 	"strings"
 )
 
@@ -258,7 +257,7 @@ func SegmentsOutputAll(segs []Segment, lOffset, rOffset int) []OutputSingle {
 	segsLen := len(segs)
 	for i := 0; i < segsLen; i++ {
 		nseg := segs[i]
-		log.Println("获取的时候:", tokenToStr(nseg.token))
+		// log.Println("获取的时候:", tokenToStr(nseg.token))
 		npos := nseg.token.pos
 		if npos != "x" {
 			var info OutputSingle

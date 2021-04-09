@@ -43,7 +43,7 @@ func (seg *Segmenter) Segment(bytes []byte) []Segment {
 
 	// 划分字元
 	text := splitTextToWords(bytes)
-	log.Println("internalSegment:", textSliceToString(text))
+	// log.Println("internalSegment:", textSliceToString(text))
 	return seg.cutJump(text, false)
 }
 
